@@ -27,4 +27,9 @@ class WelcomeTest {
 	void testGestionDeuxNoms() {
 		assertTrue(Welcome.welcome("amy,bob").equals("Hello, Amy, Bob"));
 	}
+	
+	@Test
+	void testGestionPlusieursNoms() {
+		assertTrue(Welcome.welcome("amy,bob,jerry").equals("Hello, Amy, Bob, Jerry"));
+	}
 }
