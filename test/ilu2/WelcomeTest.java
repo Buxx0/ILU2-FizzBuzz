@@ -16,5 +16,11 @@ class WelcomeTest {
 	void testBob() {
 		assertTrue(Welcome.welcome("bob").equals("Hello, Bob"));
 	}
+	
+	@Test
+	void testChaineVide() {
+		assertTrue(Welcome.welcome(null).equals("Hello, my friend"));
+		assertTrue(Welcome.welcome("   ").equals("Hello, my friend"));
+	}
 
 }
