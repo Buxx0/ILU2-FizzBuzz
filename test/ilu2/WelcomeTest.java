@@ -22,5 +22,9 @@ class WelcomeTest {
 		assertTrue(Welcome.welcome(null).equals("Hello, my friend"));
 		assertTrue(Welcome.welcome("   ").equals("Hello, my friend"));
 	}
-
+	
+	@Test
+	void testGestionCris() {
+		assertTrue(Welcome.welcome("JERRY").equals("HELLO, JERRY !"));
+	}
 }
