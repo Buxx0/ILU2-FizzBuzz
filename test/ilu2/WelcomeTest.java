@@ -6,11 +6,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class WelcomeTest {
-	
-	@BeforeEach
-	public void setup() {
-		Welcome welcome = new Welcome();
-	}
 
 	@Test
 	void testBob() {
@@ -26,5 +21,10 @@ class WelcomeTest {
 	@Test
 	void testGestionCris() {
 		assertTrue(Welcome.welcome("JERRY").equals("HELLO, JERRY !"));
+	}
+	
+	@Test
+	void testGestionDeuxNoms() {
+		assertTrue(Welcome.welcome("amy,bob").equals("Hello, Amy, Bob"));
 	}
 }
